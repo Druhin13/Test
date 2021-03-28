@@ -24,6 +24,7 @@
         columns: 7;
         column-gap: 30px;
         column-fill: initial;
+	positon: fixed;
       }
 
       .brick {
@@ -264,12 +265,18 @@
 
       update();
     </script>
-    <script>
+    	<script>
 		butter.init({
 			wrapperId: 'butter',
 			cancelOnTouch: true,
 			wrapperDamper: 0.06
 		});
 	</script>
+	  <script>	//scrollbar hide
+
+	var style = document.createElement("style");
+	style.innerHTML = `body::-webkit-scrollbar {display: none;}`;
+	document.head.appendChild(style);
+	  </script>
   </body>
 </html>
