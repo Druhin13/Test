@@ -2,7 +2,7 @@
   <head>
     <title>Aladino</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script src="butter.js"></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -264,5 +264,12 @@
 
       update();
     </script>
+    <script>
+		butter.init({
+			wrapperId: 'butter',
+			cancelOnTouch: true,
+			wrapperDamper: 0.06
+		});
+	</script>
   </body>
 </html>
