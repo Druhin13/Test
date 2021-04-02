@@ -21,7 +21,7 @@
         height: 60vh;
       }
 
-      article img {
+      article video {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -31,7 +31,7 @@
 
   <body>
     <article>
-      <img src="assets/images/3.jpg" />
+      <video src="https://uploads-ssl.webflow.com/603baa99d556fc6b798e0570/604114fa14856461a4d91835_stamurai%20video-transcode.mp4" />
     </article>
 
     <script type="module">
@@ -115,7 +115,7 @@
       const carpet = aladino.carpet(el, {
         material,
         uniforms: {
-          image: aladino.texture(el.querySelector("img").src),
+          image: aladino.texture(el.querySelector("video").src),
           speed: [0, 0],
         },
       });
