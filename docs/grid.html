@@ -111,6 +111,9 @@
         const width = random(500, 900);
         const height = random(800, 1000);
         const img = document.createElement("img");
+	if(i==0){
+		img.marginTop = '15vh';
+	}
         img.dataset.src = `product%20images/`+(i+1)+'.JPG';
         img.width = width;
         img.height = height;
